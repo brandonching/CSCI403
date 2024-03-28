@@ -10,6 +10,22 @@
 -- Add the SQL for each step that needs SQL after the appropriate comment
 -- below. You may not need to do every single step, depending on your
 -- model.
+SET search_path TO bching;
+/*
+ Step 0: Drop tables
+ */
+DROP TABLE IF EXISTS service_provider CASCADE;
+DROP TABLE IF EXISTS service CASCADE;
+DROP TABLE IF EXISTS location CASCADE;
+DROP TABLE IF EXISTS review CASCADE;
+DROP TABLE IF EXISTS client CASCADE;
+DROP TABLE IF EXISTS contract CASCADE;
+DROP TABLE IF EXISTS merchandise CASCADE;
+DROP TABLE IF EXISTS contact_info CASCADE;
+DROP TABLE IF EXISTS location_service_xref CASCADE;
+DROP TABLE IF EXISTS provider_service_xref CASCADE;
+DROP TABLE IF EXISTS client_merchandise_xref CASCADE;
+DROP TABLE IF EXISTS provider_merchandise_xref CASCADE;
 /*
  Step 1: Regular entities
  */
